@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="html-Png" sizes="32x32" href="/Tokyo/favicon.ico">
+    <title>- FRANXX 业务 -</title>
+</head>
+<style>
+    .fra-one{
+        display: flex;
+        flex-direction: column;
+        height: 688px;
+        background-color: rgb(241, 241, 241);
+        margin: 0px;
+    }
+
+    .fra-all{
+        margin: 10px;
+        box-shadow: 2px 2px 2px rgb(163, 163, 163);
+
+    }
+
+    .fra-up{
+        background-color: rgb(255, 255, 255);
+        flex: 1;
+        margin-bottom: 0px;
+        z-index: 9999;
+        top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fra-center{
+        background-color: rgb(0, 136, 255);
+        flex: 7;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fra-down{
+        background-color: blue;
+        flex: 1;
+        margin-top: 0px;
+    }
+
+    .fra-shangpin{
+        background-color: aliceblue;
+        flex: 1;
+    }
+
+    .fra-juti{
+        background-color: aqua;
+        flex: 1;
+    }
+
+    .fra-miaoshu{
+        background-color: blue;
+        flex: 1;
+    }
+
+    .fra-fraimg{
+        margin-left: 10px;
+        width: 64px;
+        height: 64px;
+        pointer-events: none;
+    }
+
+    .fra-fratext{
+        flex: 4;
+        text-align: center;
+        color: rgb(0, 140, 255);
+        
+    }
+</style>
+<body class="fra-one">
+           <!--顶部栏-->
+           <div class="fra-all fra-up">
+            <img src="/FRANXX.png" class="fra-fraimg">
+            <summary class="fra-fratext">- FRANXX ARK商品 -</summary>
+           </div>
+           <!--内容展示区域-->
+           <div class="fra-all fra-center">
+                 <!--商品选择-->
+                 <div class="fra-shangpin">
+                    <!--方舟按钮-->
+                    <button id="redirectButton">方舟业务</button>
+                    <script src="tiaozhuan.js"></script>
+                 </div>
+                 <!--内容展示区域-->
+                 <div class="fra-juti"></div>
+                 <!--内容展示区域-->
+                 <div class="fra-miaoshu"></div>
+           </div>
+           <!--底部导航栏-->
+           <div class="fra-all fra-down"></div>
+</body>
+</html>
