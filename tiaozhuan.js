@@ -26,7 +26,7 @@ button.addEventListener('click', function() {
 
 function addQQFriend() {
     var qqNumber = '2012390487'; // 替换成你的 QQ 号码
-    var addUrl = 'tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=' + qqNumber;
+    var addUrl = 'mqqapi://card/show_pslcard?src_type=internal&version=1&uin=' + qqNumber;
     window.location.href = addUrl;
 }
 
