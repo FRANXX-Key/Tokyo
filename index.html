@@ -5,96 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="html-Png" sizes="32x32" href="/Tokyo/favicon.ico">
     <title>- FRANXX 业务 -</title>
+    <style>
+        .fra-one{
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            background-color: rgb(241, 241, 241);
+            margin: 0px;
+        }
+    
+        .fra-all{
+            margin: 10px;
+            box-shadow: 2px 2px 2px rgb(163, 163, 163);
+            border-radius: 15px;
+    
+        }
+    
+        /*body大体CSS*/
+        .fra-up{
+            background-color: rgb(255, 255, 255);
+            flex: 1;
+            margin: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            z-index: 10000;
+            position: fixed;
+            border-radius: 0px;
+            width: 100%;
+            
+        }
+    
+        .fra-center{
+            background-color: rgb(0, 136, 255);
+            flex: 7;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+    
+        .fra-down{
+            background-color: rgb(0, 174, 255);
+            flex: 1;
+            margin: 0px;
+            display: flex;
+            bottom: 0;
+            flex-direction: row;
+            align-items: center;
+            z-index: 10000;
+            position: fixed;
+            border-radius: 0px;
+            width: 100%;
+            height: 70px;
+            
+        }
+    
+        /*中间大体CSS*/
+        .fra-shangpin{
+            background-color: aliceblue;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+    
+        .fra-juti{
+            background-color: aqua;
+            flex: 2;
+        }
+    
+        .fra-miaoshu{
+            background-color: blue;
+            flex: 2;
+        }
+    
+        /*顶部栏CSS*/
+        .fra-fraimg{
+            margin-left: 10px;
+            width: 64px;
+            height: 64px;
+            pointer-events: none;
+        }
+    
+        .fra-fratext{
+            width: 100%;
+            text-align: center;
+            color: rgb(0, 140, 255);
+            flex: 4;
+            
+        }
+        .fra-qq{
+            border: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+    
+        /*商品区CSS*/
+        .fra-button{
+            background-color: aqua;
+            color: rgb(0, 136, 255);
+            width: 70px;
+            height: 30px;
+            margin: 5px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<style>
-    .fra-one{
-        display: flex;
-        flex-direction: column;
-        height: 688px;
-        background-color: rgb(241, 241, 241);
-        margin: 0px;
-    }
 
-    .fra-all{
-        margin: 10px;
-        box-shadow: 2px 2px 2px rgb(163, 163, 163);
-
-    }
-
-    .fra-up{
-        background-color: rgb(255, 255, 255);
-        flex: 1;
-        margin-bottom: 0px;
-        z-index: 9999;
-        top: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .fra-center{
-        background-color: rgb(0, 136, 255);
-        flex: 7;
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .fra-down{
-        background-color: blue;
-        flex: 1;
-        margin-top: 0px;
-    }
-
-    .fra-shangpin{
-        background-color: aliceblue;
-        flex: 1;
-    }
-
-    .fra-juti{
-        background-color: aqua;
-        flex: 1;
-    }
-
-    .fra-miaoshu{
-        background-color: blue;
-        flex: 1;
-    }
-
-    .fra-fraimg{
-        margin-left: 10px;
-        width: 64px;
-        height: 64px;
-        pointer-events: none;
-    }
-
-    .fra-fratext{
-        flex: 4;
-        text-align: center;
-        color: rgb(0, 140, 255);
-        
-    }
-</style>
 <body class="fra-one">
+
            <!--顶部栏-->
            <div class="fra-all fra-up">
-            <img src="/FRANXX.png" class="fra-fraimg">
-            <summary class="fra-fratext">- FRANXX ARK商品 -</summary>
+            <!--图片-->
+            <img src="/Tokyo/FRANXX.png" class="fra-fraimg">
+            <!--QQ-->
+            <div class="fra-fratext">            
+            <button id="QQ" class="fra-qq">- FRANXX ARK商品 -</button>
+            <script src="/Tokyo/tiaozhuan.js"></script>
+            </div>
            </div>
+
            <!--内容展示区域-->
            <div class="fra-all fra-center">
+
                  <!--商品选择-->
                  <div class="fra-shangpin">
-                    <!--方舟按钮-->
-                    <button id="redirectButton">方舟业务</button>
+
+                    <!--芯片图纸按钮-->
+                    <button id="ARK001" class="fra-button">BUG龙图纸</button>
                     <script src="tiaozhuan.js"></script>
+
+                    <!--按钮-->
+                    <button id="ARK002" class="fra-button">方舟业务</button>
+                    <script src="tiaozhuan.js"></script>
+
                  </div>
+
                  <!--内容展示区域-->
                  <div class="fra-juti"></div>
+
                  <!--内容展示区域-->
                  <div class="fra-miaoshu"></div>
+
            </div>
+
            <!--底部导航栏-->
-           <div class="fra-all fra-down"></div>
+           <div class="fra-all fra-down">
+                  
+           </div>
+
 </body>
 </html>
