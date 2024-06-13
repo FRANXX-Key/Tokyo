@@ -1,7 +1,7 @@
 // script.js
 
 // 获取按钮元素
-var button = document.getElementById('redirectButton');
+var button = document.getElementById('ARK001');
 
 // 添加点击事件监听器
 button.addEventListener('click', function() {
@@ -11,3 +11,24 @@ button.addEventListener('click', function() {
     // 执行页面跳转
     window.location.href = destinationURL;
 });
+
+// 获取按钮元素
+var button = document.getElementById('ARK002');
+
+// 添加点击事件监听器
+button.addEventListener('click', function() {
+    // 在这里指定要跳转的 URL
+    var destinationURL = 'ceshi.html';
+
+    // 执行页面跳转
+    window.location.href = destinationURL;
+});
+
+function addQQFriend() {
+    var qqNumber = '2012390487'; // 替换成你的 QQ 号码
+    var addUrl = 'tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=' + qqNumber;
+    window.location.href = addUrl;
+}
+
+// 绑定按钮点击事件
+document.getElementById('QQ').addEventListener('click', addQQFriend);
